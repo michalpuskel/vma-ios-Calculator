@@ -13,7 +13,14 @@ class RoundButton: UIButton {
     override func awakeFromNib() {
         self.layoutIfNeeded()
         layer.masksToBounds = true
-        layer.cornerRadius = self.frame.height / 2.0
+        switch UIScreen.main.bounds.size.height {
+        case 0...500:
+            layer.cornerRadius = 30.0
+        case 501...600:
+            layer.cornerRadius = 34.0
+        default:
+            layer.cornerRadius = self.frame.height / 2.0
+        }
     }
     
 }

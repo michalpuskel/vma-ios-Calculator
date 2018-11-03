@@ -31,7 +31,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VMA iOS FMFI UK 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waF-IP-Zvg">
-                                <rect key="frame" x="43" y="331" width="234" height="27"/>
+                                <rect key="frame" x="43" y="152" width="234" height="27"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="target device: iPhone SE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3JY-La-pRo">
+                                <rect key="frame" x="42" y="331" width="236" height="27"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -39,12 +45,14 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="3JY-La-pRo" firstAttribute="top" secondItem="UJN-lt-cGA" secondAttribute="bottom" constant="8" id="0WY-6C-01X"/>
                             <constraint firstItem="UJN-lt-cGA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AuA-ku-kyT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3JY-La-pRo" secondAttribute="bottom" constant="122" id="DZS-jg-Ehj"/>
                             <constraint firstItem="waF-IP-Zvg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DpX-7s-T3w"/>
                             <constraint firstItem="jJp-Cz-zIL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Gjs-Mt-U8J"/>
-                            <constraint firstItem="waF-IP-Zvg" firstAttribute="top" secondItem="UJN-lt-cGA" secondAttribute="bottom" constant="8" id="TcP-62-pBA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="waF-IP-Zvg" secondAttribute="bottom" constant="122" id="bMO-jE-8QI"/>
+                            <constraint firstItem="waF-IP-Zvg" firstAttribute="top" secondItem="jJp-Cz-zIL" secondAttribute="bottom" constant="8" id="LOy-ct-aqA"/>
                             <constraint firstItem="jJp-Cz-zIL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="73" id="udP-0B-95X"/>
+                            <constraint firstItem="3JY-La-pRo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wxz-q8-IA7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
