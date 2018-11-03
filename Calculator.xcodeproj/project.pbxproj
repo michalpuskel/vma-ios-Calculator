@@ -56,10 +56,10 @@
 		A0EB6994218CECCB00007AD0 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				A0D2ADD9218D063F00E8566E /* RoundButton.swift */,
 				A0EB6995218CECCB00007AD0 /* AppDelegate.swift */,
 				A0EB6997218CECCB00007AD0 /* ViewController.swift */,
 				A0EB6999218CECCB00007AD0 /* Main.storyboard */,
-				A0D2ADD9218D063F00E8566E /* RoundButton.swift */,
 				A0EB699C218CECCC00007AD0 /* Assets.xcassets */,
 				A0EB699E218CECCC00007AD0 /* LaunchScreen.storyboard */,
 				A0EB69A1218CECCC00007AD0 /* Info.plist */,
@@ -289,7 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73W76DT7L3;
 				INFOPLIST_FILE = Calculator/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73W76DT7L3;
 				INFOPLIST_FILE = Calculator/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
