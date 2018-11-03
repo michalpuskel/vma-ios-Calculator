@@ -10,7 +10,7 @@ import UIKit
 
 class AutoLayoutStackView: UIStackView {
 
-    override func awakeFromNib() {
+    override func didMoveToSuperview() {
         setUIForNoIPhone4()
     }
     
