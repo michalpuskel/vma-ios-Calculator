@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0B4FDE5218E08D6004DD84E /* AutoLayoutStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B4FDE4218E08D6004DD84E /* AutoLayoutStackView.swift */; };
 		A0D2ADDA218D063F00E8566E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D2ADD9218D063F00E8566E /* RoundButton.swift */; };
 		A0EB6996218CECCB00007AD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB6995218CECCB00007AD0 /* AppDelegate.swift */; };
 		A0EB6998218CECCB00007AD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB6997218CECCB00007AD0 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0B4FDE4218E08D6004DD84E /* AutoLayoutStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutStackView.swift; sourceTree = "<group>"; };
 		A0D2ADD9218D063F00E8566E /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		A0EB6992218CECCB00007AD0 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EB6995218CECCB00007AD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0B4FDE6218E0C00004DD84E /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				A0B4FDE4218E08D6004DD84E /* AutoLayoutStackView.swift */,
+				A0D2ADD9218D063F00E8566E /* RoundButton.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
 		A0EB6989218CECCB00007AD0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +67,7 @@
 		A0EB6994218CECCB00007AD0 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				A0D2ADD9218D063F00E8566E /* RoundButton.swift */,
+				A0B4FDE6218E0C00004DD84E /* CustomUI */,
 				A0EB6995218CECCB00007AD0 /* AppDelegate.swift */,
 				A0EB6997218CECCB00007AD0 /* ViewController.swift */,
 				A0EB6999218CECCB00007AD0 /* Main.storyboard */,
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B4FDE5218E08D6004DD84E /* AutoLayoutStackView.swift in Sources */,
 				A0D2ADDA218D063F00E8566E /* RoundButton.swift in Sources */,
 				A0EB6998218CECCB00007AD0 /* ViewController.swift in Sources */,
 				A0EB6996218CECCB00007AD0 /* AppDelegate.swift in Sources */,
