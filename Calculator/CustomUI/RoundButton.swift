@@ -17,7 +17,7 @@ class RoundButton: UIButton {
         case 0...500:
             layer.cornerRadius = 30.0
         case 501...600:
-            layer.cornerRadius = 34.0
+            layer.cornerRadius = 33.0
         default:
             layer.cornerRadius = self.frame.height / 2.0
         }
