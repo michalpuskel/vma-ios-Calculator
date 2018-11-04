@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A033AFA5218F99B600E46DF2 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033AFA4218F99B600E46DF2 /* Calculator.swift */; };
 		A0B4FDE5218E08D6004DD84E /* AutoLayoutStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B4FDE4218E08D6004DD84E /* AutoLayoutStackView.swift */; };
 		A0D2ADDA218D063F00E8566E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D2ADD9218D063F00E8566E /* RoundButton.swift */; };
 		A0EB6996218CECCB00007AD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB6995218CECCB00007AD0 /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A033AFA4218F99B600E46DF2 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		A0B4FDE4218E08D6004DD84E /* AutoLayoutStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutStackView.swift; sourceTree = "<group>"; };
 		A0D2ADD9218D063F00E8566E /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		A0EB6992218CECCB00007AD0 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +76,7 @@
 				A0EB699C218CECCC00007AD0 /* Assets.xcassets */,
 				A0EB699E218CECCC00007AD0 /* LaunchScreen.storyboard */,
 				A0EB69A1218CECCC00007AD0 /* Info.plist */,
+				A033AFA4218F99B600E46DF2 /* Calculator.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				A0B4FDE5218E08D6004DD84E /* AutoLayoutStackView.swift in Sources */,
 				A0D2ADDA218D063F00E8566E /* RoundButton.swift in Sources */,
 				A0EB6998218CECCB00007AD0 /* ViewController.swift in Sources */,
+				A033AFA5218F99B600E46DF2 /* Calculator.swift in Sources */,
 				A0EB6996218CECCB00007AD0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

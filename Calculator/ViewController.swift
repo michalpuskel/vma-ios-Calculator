@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var display: UILabel!
+    var calculator: Calculator = Calculator()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUIForNoIPhone4()
+        
+        print(calculator.isNegative)
     }
     
     private func setUIForNoIPhone4 () {
