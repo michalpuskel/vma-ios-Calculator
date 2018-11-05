@@ -23,17 +23,36 @@ class Calculator {
             }
         }
         didSet {
-            guard bufferedStringNumberLiteral != "" else {
-                bufferedDigitsCount = 0
+            guard !bufferedStringNumberLiteral.isEmpty else {
+                resetNumber()
                 display.text = "0"
                 return
             }
             
-            display.text = bufferedStringNumberLiteral
-            display.font = display.font.withSize(100)
+            display.text = number.formattedWithSeparator
+            print(number)
+            if number.isInteger && commaTyped {
+                display.text = display.text! + ","
+            }
+            let desiredFontSize = CalculatorDisplay.optimalFontSize(for: bufferedDigitsCount)
+            if display.font.pointSize != desiredFontSize {
+                display.font = display.font.withSize(desiredFontSize)
+            }
         }
     }
+    var number: Decimal {
+        guard !bufferedStringNumberLiteral.isEmpty else { return 0.0 }
+        
+        var validString = bufferedStringNumberLiteral
+        if let lastChar = validString.last {
+            if lastChar == "," {
+                validString.removeLast()
+            }
+        }
+        return convertValidStringToDecimal(from: validString.replacingOccurrences(of: ",", with: "."))
+    }
     var bufferedDigitsCount: Int8 = 0
+    var commaTyped: Bool = false
     let display: UILabel
     
     init(with display: UILabel) {
@@ -46,6 +65,11 @@ class Calculator {
         isNegative = false
         isMathError = false
         bufferedStringNumberLiteral = ""
+    }
+    
+    func resetNumber() {
+        bufferedDigitsCount = 0
+        commaTyped = false
     }
     
     func performMathOperation() -> Decimal? {
@@ -106,8 +130,13 @@ class Calculator {
         }
     }
     
-    static func convertValidStringToDecimal(from validString: String) -> Decimal {
-        return Decimal(Double(validString)!)
+    private func convertValidStringToDecimal(from validString: String) -> Decimal {
+        let precisionMultiplierDouble: Double = 1_000_000_000.0
+        let precisionMultiplierDecimal: Decimal = 1_000_000_000.0
+        let resultDouble = Double(validString)! * precisionMultiplierDouble
+        let resultDecimal = Decimal(resultDouble) / precisionMultiplierDecimal
+        
+        return resultDecimal
     }
 }
 
@@ -130,4 +159,20 @@ extension Decimal {
     var isInteger: Bool {
         return self.exponent == 0
     }
+    
+    var formattedWithSeparator: String {
+        return Formatter.withSeparator.string(for: self) ?? ""
+    }
 }
+
+
+
+extension Formatter {
+    static let withSeparator: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.groupingSeparator = " "
+        formatter.numberStyle = .decimal
+        return formatter
+    }()
+}
+

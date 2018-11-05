@@ -21,6 +21,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onDigitTapped(_ sender: UIButton) {
+        guard calculator.bufferedDigitsCount < 9 else { return }
+        
+        calculator.bufferedStringNumberLiteral += sender.currentTitle!
+    }
+    
+    @IBAction func onCommaTapped(_ sender: UIButton) {
+        guard !calculator.commaTyped else { return }
+        
+        calculator.commaTyped = true
         calculator.bufferedStringNumberLiteral += sender.currentTitle!
     }
     

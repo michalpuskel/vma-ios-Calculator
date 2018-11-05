@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,25 +15,25 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oCH-95-YRX" customClass="AutoLayoutStackView" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="15" y="20" width="290" height="535"/>
+                                <rect key="frame" x="15" y="20" width="290" height="447"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" verticalCompressionResistancePriority="1" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="infinite" translatesAutoresizingMaskIntoConstraints="NO" id="Jtl-8L-bHI">
-                                        <rect key="frame" x="0.0" y="0.0" width="290" height="89"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="1"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6s-fk-JLe">
-                                        <rect key="frame" x="0.0" y="99" width="290" height="80"/>
+                                        <rect key="frame" x="0.0" y="11" width="290" height="80"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="80"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="88"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Wtl-ZB-o9P" customClass="AutoLayoutStackView" customModule="Calculator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="189" width="290" height="61"/>
+                                        <rect key="frame" x="0.0" y="101" width="290" height="61"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOw-Ki-jVr" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="61.5" height="61"/>
@@ -73,7 +73,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2cD-Do-zWS" customClass="AutoLayoutStackView" customModule="Calculator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="260" width="290" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="172" width="290" height="61.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mX3-yJ-svB" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="61.5" height="61.5"/>
@@ -119,7 +119,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kKY-05-MlW" customClass="AutoLayoutStackView" customModule="Calculator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="331.5" width="290" height="61"/>
+                                        <rect key="frame" x="0.0" y="243.5" width="290" height="61"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhA-Wj-XE3" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="61.5" height="61"/>
@@ -165,7 +165,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="EXR-0o-SPF" customClass="AutoLayoutStackView" customModule="Calculator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="402.5" width="290" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="314.5" width="290" height="61.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzn-hO-8aN" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="61.5" height="61.5"/>
@@ -211,7 +211,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="t5A-Sp-GCu" customClass="AutoLayoutStackView" customModule="Calculator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="474" width="290" height="61"/>
+                                        <rect key="frame" x="0.0" y="386" width="290" height="61"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qW-GD-ZBt" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="137.5" height="61"/>
@@ -232,6 +232,9 @@
                                                 <state key="normal" title=",">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onCommaTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ln-Ib-aaK"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWT-HF-aWn" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="229" y="0.0" width="61" height="61"/>
