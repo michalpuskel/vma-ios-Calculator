@@ -25,7 +25,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="89"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0,55" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6s-fk-JLe">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6s-fk-JLe">
                                         <rect key="frame" x="0.0" y="99" width="290" height="80"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="80"/>
@@ -82,6 +82,9 @@
                                                 <state key="normal" title="7">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fMK-2x-6ZA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSn-UY-hwh" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="76.5" y="0.0" width="61" height="61.5"/>
@@ -90,6 +93,9 @@
                                                 <state key="normal" title="8">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GFI-Mx-05c"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNL-L0-TVM" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="152.5" y="0.0" width="61.5" height="61.5"/>
@@ -98,6 +104,9 @@
                                                 <state key="normal" title="9">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fEz-FJ-92e"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeF-oG-6J0" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="229" y="0.0" width="61" height="61.5"/>
@@ -119,6 +128,9 @@
                                                 <state key="normal" title="4">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j0t-Cp-mNs"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zn3-Ty-OVf" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="76.5" y="0.0" width="61" height="61"/>
@@ -127,6 +139,9 @@
                                                 <state key="normal" title="5">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0m-Kf-Jto"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWd-8h-gDa" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="152.5" y="0.0" width="61.5" height="61"/>
@@ -135,6 +150,9 @@
                                                 <state key="normal" title="6">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lnr-ki-Rfu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcG-MU-7cM" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="229" y="0.0" width="61" height="61"/>
@@ -156,6 +174,9 @@
                                                 <state key="normal" title="1">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NXr-r5-ufC"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDJ-eM-Iva" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="76.5" y="0.0" width="61" height="61.5"/>
@@ -164,6 +185,9 @@
                                                 <state key="normal" title="2">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxV-Rx-JNe"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkZ-et-mdZ" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="152.5" y="0.0" width="61.5" height="61.5"/>
@@ -172,6 +196,9 @@
                                                 <state key="normal" title="3">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ppp-9l-h5u"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVc-fC-DJH" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="229" y="0.0" width="61" height="61.5"/>
@@ -194,6 +221,9 @@
                                                 <state key="normal" title="0">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ipy-3X-NtF"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odN-wG-3dU" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="152.5" y="0.0" width="61.5" height="61"/>

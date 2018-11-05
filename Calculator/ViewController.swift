@@ -10,14 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var calculator: Calculator!
     @IBOutlet weak var display: UILabel!
-    var calculator: Calculator = Calculator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUIForNoIPhone4()
         
-        print(calculator.isNegative)
+        calculator = Calculator(with: display)
+    }
+    
+    @IBAction func onDigitTapped(_ sender: UIButton) {
+        calculator.bufferedStringNumberLiteral += sender.currentTitle!
     }
     
     private func setUIForNoIPhone4 () {
