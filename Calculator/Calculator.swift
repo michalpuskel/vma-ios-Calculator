@@ -29,14 +29,12 @@ class Calculator {
                 return
             }
             
-            display.text = number.formattedWithSeparator
+            display.text = bufferedStringNumberLiteral
             print(number)
-            if number.isInteger && commaTyped {
-                display.text = display.text! + ","
-            }
+            
             let desiredFontSize = CalculatorDisplay.optimalFontSize(for: bufferedDigitsCount)
             if display.font.pointSize != desiredFontSize {
-                display.font = display.font.withSize(desiredFontSize)
+                display.font = UIFont.systemFont(ofSize: desiredFontSize, weight: .thin)
             }
         }
     }
@@ -159,20 +157,5 @@ extension Decimal {
     var isInteger: Bool {
         return self.exponent == 0
     }
-    
-    var formattedWithSeparator: String {
-        return Formatter.withSeparator.string(for: self) ?? ""
-    }
-}
-
-
-
-extension Formatter {
-    static let withSeparator: NumberFormatter = {
-        let formatter = NumberFormatter()
-        formatter.groupingSeparator = " "
-        formatter.numberStyle = .decimal
-        return formatter
-    }()
 }
 
