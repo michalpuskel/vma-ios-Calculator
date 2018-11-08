@@ -22,8 +22,10 @@ struct CalculatorDisplay {
             return 66.0
         case 6:
             return 78.0
-        default:
+        case 0...5:
             return 88.0
+        default:
+            return 52.0
         }
     }
     
