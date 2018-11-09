@@ -1,4 +1,4 @@
-# vma-ios-Calculator
+# Calculator
 Homework in iOS Swift app course FMFI UK. (target device: iPhone 5S)
 
 #ended
