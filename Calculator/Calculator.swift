@@ -17,7 +17,7 @@ class Calculator {
     var bufferedStringNumberLiteral: String = "" {
         willSet {
             if let newChar = newValue.last {
-                if newChar != "," {
+                if newChar != "," && newChar != "a" {
                     bufferedDigitsCount += 1
                 }
             }
@@ -37,6 +37,8 @@ class Calculator {
         }
     }
     var number: Decimal {
+        guard !isMathError else { return 0.0 }
+        
         guard !bufferedStringNumberLiteral.isEmpty else { return 0.0 }
         
         var validString = bufferedStringNumberLiteral
@@ -155,6 +157,7 @@ class Calculator {
         case .div:
             guard operatorr != .div || operand2 != 0.0 else {
                 isMathError = true
+                bufferedStringNumberLiteral = "Chyba"
                 return nil
             }
             

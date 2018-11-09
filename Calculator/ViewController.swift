@@ -24,6 +24,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onDigitTapped(_ sender: UIButton) {
+        guard !calculator.isMathError else {
+            calculator.bufferedStringNumberLiteral = "Chyba"
+            return
+        }
+        
         guard sender.currentTitle! != "0" || !calculator.bufferedStringNumberLiteral.isEmpty else { return }
         
         guard calculator.bufferedDigitsCount < CalculatorDisplay.digitsLimit else { return }
@@ -41,6 +46,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onCommaTapped(_ sender: UIButton) {
+        guard !calculator.isMathError else {
+            calculator.bufferedStringNumberLiteral = "Chyba"
+            return
+        }
+        
         guard !calculator.commaTyped else { return }
         
         guard calculator.number.isInteger else { return }
@@ -68,6 +78,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onMathOperationTapped(_ sender: UIButton) {
+        guard !calculator.isMathError else {
+            calculator.bufferedStringNumberLiteral = "Chyba"
+            return
+        }
+        
         let mathOperator: MathOperator?
         switch sender.currentTitle {
         case "+":
@@ -121,6 +136,11 @@ class ViewController: UIViewController {
     
     
     @IBAction func onResultTapped(_ sender: UIButton) {
+        guard !calculator.isMathError else {
+            calculator.bufferedStringNumberLiteral = "Chyba"
+            return
+        }
+        
         guard !calculator.operatorrs.isEmpty else { return }
         
         if calculator.bufferedDigitsCount > 0 {
@@ -135,9 +155,10 @@ class ViewController: UIViewController {
         print("operators: \(calculator.operatorrs)")
         
         let result = calculator.performMathOperation()
-        calculator.reset(saveAndDisplay: result)
         if calculator.isMathError {
             calculator.bufferedStringNumberLiteral = "Chyba"
+        } else {
+            calculator.reset(saveAndDisplay: result)
         }
         ResultTyped = true
 
